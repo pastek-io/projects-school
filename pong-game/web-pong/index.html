@@ -1,0 +1,122 @@
+<!--
+    Description : Pong-Game
+    Author : Luis DS
+    Version : V1
+    Date : 05.05.2023
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="#">
+        <script type='module' src='js/script.js'></script>
+        <title>Pong</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#home">Pong-Game</a></div>
+                <ul class="links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#setup">Setup</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a class="action_btn" href='./jeu/jeuPong.exe' download>Download</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- TODO : blur behind header  -->
+                
+        </header>
+        <main>
+            <div id='cursor'></div>
+            <div class="dropdown_menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#setup">Setup</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="action_btn" href='./jeu/jeuPong.exe' download>Download</a></li>
+                </ul>
+            </div>
+            <section id='home'>
+                <div class="h1">
+                    <span>P</span>
+                    <span>o</span>
+                    <span>n</span>
+                    <span>g</span>
+                    <span>-</span>
+                    <span>G</span>
+                    <span>a</span>
+                    <span>m</span>
+                    <span>e</span>
+                </div>
+            </section>
+            <div class="column column-home">
+                <div class='line'></div>
+            </div>
+            <section id='about'>
+                <div class="column column-about">
+                    <div class="point point-about hidden">
+                        <div></div>
+                    </div>
+                    <div class='line line-about'></div>
+                </div>
+                <div class="divh2 hidden">
+                    <div class="h2">
+                        More about the game
+                    </div>
+                    A famous game named Pong, one of the first arcade video game created by Atari engineer Allan Alcorn. Pong is a two-dimensional sports game that simulates table tennis. The player controls an in-game paddle by moving it vertically across the left or right side of the screen. <span class="next-text">They can compete against another player controlling a second paddle on the opposing side. Players use the paddles to hit a ball back and forth. The goal is for each player to reach eleven points before the opponent; points are earned when one fails to return the ball to the other.</span> <span class="points">...</span>
+                </div>
+            </section>
+            <section id='setup'>
+                <div class="column column-setup">
+                    <div class="point point-setup hidden">
+                        <div></div>
+                    </div>
+                    <div class='line line-setup'></div>
+                </div>
+                <div class="divh2 hidden">
+                    <div class="h2">
+                        Setup the game with only two clicks
+                    </div>
+                    <div style='display: flex; flex-direction: column; width: 100%; height: 50%;'>
+                        <p>You will just have to download the game right below, launch it and enjoy.</p>
+                        <a class='action_btn setup_btn' href='./jeu/jeuPong.exe' download>Download</a>
+                    </div>
+                </div>
+            </section>
+            <section id='contact'>
+                <div class="form hidden-form">
+                    <div class="h2">
+                        Contact me
+                    </div>
+                    <form>
+                        <div>
+                            <div class='mail'>
+                                <input type="email" name="email" id="email" placeholder="Email *" required>
+                            </div>        
+                            <div class='title'>
+                                <input type="text" name="title" id="title" placeholder="Title *" required>
+                            </div> 
+                        </div>
+                        <div class='message'>
+                            <textarea name="message" id="message" placeholder="Message *" required></textarea>
+                        </div>     
+                        <div class='btn-send'>
+                            <button type="submit" class='action_btn' id='btn-send' value='send'>Send message</button>
+                            <span><em class='message-confirm'></em></span>
+                        </div>        
+                    </form>        
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
