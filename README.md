@@ -1,3 +1,3 @@
 # projects-school
 
-Projects i've down in school
+Projects I've down in school
