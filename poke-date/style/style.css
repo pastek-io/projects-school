@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  font-family: "Poppins", serif;
+  color: #0c1331;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d0b0ba;
+}
+
+header {
+  width: 100vw;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10%;
+}
+header img {
+  height: 80%;
+}
+header nav {
+  height: 80%;
+}
+header nav ul {
+  height: 100%;
+}
+header nav ul li {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header nav ul li a {
+  display: inline-block;
+  padding: 15px;
+  background-color: #e25876;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  color: #0c1331;
+  text-decoration: none;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section div.poke-image {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+main section div.poke-image img {
+  height: 60%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #af4b64;
+  font-size: 1.1rem;
+}/*# sourceMappingURL=style.css.map */
